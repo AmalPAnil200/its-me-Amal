@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJFH8945HD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJFH8945HD');
+    </script>
 </head>
 
 <body>
@@ -17,7 +26,7 @@
         <div class="logo">
             <a href="https://www.linkedin.com/in/amal-p-anil" title="LinkedIn" class="social-link" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
-            </a> 
+            </a>
             <a href="https://www.instagram.com/_popy________/" title="link" class="social-link" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
@@ -34,9 +43,8 @@
                     <li><a href="#service">Service</a></li>
                     <li><a href="#Live">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>Total Visits: <span id="visit-count">0</span></li>
                 </ul>
-            </div>            
+            </div>
 
             <!-- Hamburger Menu Button -->
             <div class="menu-btn">
@@ -96,7 +104,7 @@
                 </div>
                 <div class="ttm-1">
                     <p>I make the complex simple.</p>
-                    <button class="contact-button">Contact Me</button>
+                    <a href="#contact"><button class="contact-button">Contact Me</button></a>
                 </div>
             </div>
             <div class="col-md-6 profile-pic">
@@ -134,11 +142,12 @@
             <div class="col-md-6">
                 <div class="about-info">
                     <h4>Who and what is Me..</h4>
-                    <p> I am a passionate <strong>UI/UX Designer, Graphics Designer, and Web Developer</strong> 
-                        with a keen eye for aesthetics and functionality. I specialize in creating visually 
-                        appealing and user-friendly designs that enhance digital experiences.With expertise in modern design tools and web technologies, I strive to bring creativity 
-                        and innovation to every project I work on. Whether it's designing intuitive interfaces, 
-                        crafting stunning graphics, or developing responsive websites, I am dedicated to 
+                    <p> I am a passionate <strong>UI/UX Designer, Graphics Designer, and Web Developer</strong>
+                        with a keen eye for aesthetics and functionality. I specialize in creating visually
+                        appealing and user-friendly designs that enhance digital experiences.With expertise in modern
+                        design tools and web technologies, I strive to bring creativity
+                        and innovation to every project I work on. Whether it's designing intuitive interfaces,
+                        crafting stunning graphics, or developing responsive websites, I am dedicated to
                         delivering high-quality results.
                     </p>
                 </div>
@@ -165,7 +174,7 @@
                 <a href="resume.pdf" class="cv-link" download>
                     <button title="Download Resume" class="cv-button">Download Resume</button>
                 </a>
-                
+
                 </a>
             </div>
         </div>
@@ -305,11 +314,13 @@
                     </div>
                     <div class="project-card">
                         <img src="site_two.png" alt="image">
-                        <a href="https://www.grenzhandel.com/digitization.html" class="project-link" target="_blank">View Live</a>
+                        <a href="https://www.grenzhandel.com/digitization.html" class="project-link"
+                            target="_blank">View Live</a>
                     </div>
                     <div class="project-card">
                         <img src="site_four.png" alt="image">
-                        <a href="https://aiswarya-salon.onrender.com/" class="project-link" target="_blank">View Live</a>
+                        <a href="https://aiswarya-salon.onrender.com/" class="project-link" target="_blank">View
+                            Live</a>
                     </div>
                     <div class="project-card">
                         <img src="site_three.png" alt="image">
@@ -325,7 +336,7 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h2 class="section-title">Get in Touch</h2>
-                    
+
                     <div class="contact-grid">
                         <div class="contact-info-card">
                             <img src="location.png" alt="images">
@@ -347,10 +358,12 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/amal-p-anil" title="LinkedIn" class="social-link" target="_blank">
+                        <a href="https://www.linkedin.com/in/amal-p-anil" title="LinkedIn" class="social-link"
+                            target="_blank">
                             <i class="fab fa-linkedin-in"></i>
-                        </a> 
-                        <a href="https://www.instagram.com/_popy________/" title="link" class="social-link" target="_blank">
+                        </a>
+                        <a href="https://www.instagram.com/_popy________/" title="link" class="social-link"
+                            target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -358,7 +371,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
     <script>
@@ -402,23 +415,7 @@
         });
     </script>
 
-<script>
-    // Get the current visit count from localStorage
-    let visitCount = localStorage.getItem("page_view");
 
-    // If no visit count exists, set it to 1, else increment it
-    if (visitCount === null) {
-        visitCount = 1;
-    } else {
-        visitCount = Number(visitCount) + 1;
-    }
-
-    // Store the updated count in localStorage
-    localStorage.setItem("page_view", visitCount);
-
-    // Display the count on the webpage
-    document.getElementById("visit-count").innerText = visitCount;
-</script>
-    
 </body>
+
 </html>
