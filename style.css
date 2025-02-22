@@ -578,6 +578,9 @@ text-decoration: none;
     .col-md-6 {
         width: 100%; /* Ensures full width */
     }
+    .cv-button{
+        margin-bottom: 15px;
+    }
 }
 
 .about-info h4{
@@ -746,6 +749,10 @@ text-decoration: none;
     .services {
         display: flex;
         flex-direction: column;
+    }
+    .slider-wrapper-two,
+    .slider-wrapper-three{
+        display: none;
     }
 }
 
@@ -979,4 +986,10 @@ background-color: #EAEAEA;    display: flex;
 
 .contact-wrapper > * {
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+#visit-count {
+    font-size: 15px;
+    font-weight: 400;
+    color: #632BD4;
 }
