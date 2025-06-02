@@ -775,16 +775,17 @@ text-decoration: none;
 .project-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Increased gap between cards */
+    gap: 20px;
     flex-wrap: wrap;
-    padding: 40px 0; /* Added vertical padding */
+    padding: 20px 0;
 }
 
 .project-card {
     position: relative;
-    width: 280px; /* Slightly smaller width */
-    margin: 20px; /* Added margin around cards */
-    height: 300px;
+    width: calc(33.333% - 20px); /* Three cards per row with gap */
+    min-width: 250px; /* Minimum width before wrapping */
+    height: 280px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -864,6 +865,61 @@ text-decoration: none;
     transform: translateY(-10px);
 }
 
+/* Project Slider Styles */
+.project-slider {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.project-slide {
+    display: flex;
+    animation: slideProject 25s linear infinite;
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    width: 280px;
+    min-width: 280px; /* Fixed min-width to prevent squishing */
+    height: 280px;
+    margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        width: 260px;
+        min-width: 260px;
+        height: 260px;
+    }
+
+    .project-slide {
+        animation-duration: 20s; /* Slightly faster on mobile */
+    }
+
+    .project-icon {
+        font-size: 48px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 240px;
+        min-width: 240px;
+        height: 240px;
+    }
+}
+
+@keyframes slideProject {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-290px * 4)); } /* Adjust based on card width + gap */
+}
 
 
 /* section-seven */
