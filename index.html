@@ -20,6 +20,10 @@
 </head>
 
 <body>
+    <a id="whatsapp-chat" href="#" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" width="60px">
+    </a>
+    
     <div class="check d-flex">
         <h4>Check On Me</h4>
         <div class="divider"></div>
@@ -115,7 +119,7 @@
             <div class="raw w-100 info">
                 <div class="email">
                     <h3>Email</h3>
-                    <a href="mailto:amalpanil@gmail.com">amalpanil@gmail.com</a>
+                    <a href="mailto:amalpanil@gmail.com">amalpanil200@gmail.com</a>
                 </div>
                 <div class="vr divider vr-blurry"></div>
                 <div class="email">
@@ -167,7 +171,7 @@
                     </div>
                     <div class="d-flex">
                         <h6>Email:</h6>
-                        <p>amalpanil@gmail.com</p>
+                        <p>amalpanil200@gmail.com</p>
                     </div>
                 </div>
                 <hr class="hr" />
@@ -331,6 +335,23 @@
         </div>
     </section>
     <hr class="hr new-hr margin" />
+    <section class="logo-section margin">
+        <h1>Logo's</h1>
+
+        <div class="parent">
+            <div class="div2">
+                <img src="email.png" alt="Image description">
+            </div>
+            <div class="div3">
+                <img src="email.png" alt="Image description">
+            </div>
+            <div class="div4">
+                <img src="email.png" alt="Image description">
+            </div>
+        </div>
+
+    </section>
+    <hr class="hr new-hr margin" />
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-wrapper">
@@ -413,6 +434,21 @@
                 image.style.transform = "rotateY(0deg) rotateX(0deg)";
             });
         });
+    </script>
+    <script>
+        document.getElementById('whatsapp-chat').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const phoneNumber = 'YOUR_PHONE_NUMBER'; // <-- Your WhatsApp number (no + or spaces)
+
+            const message = 'Hi, I visited your website and would like to know more'; // <-- Your custom message
+
+            const url = `https://wa.me/${8590884831}?text=${encodeURIComponent(message)}`;
+
+            window.open(url, '_blank');
+        });
+
+
     </script>
 
 
