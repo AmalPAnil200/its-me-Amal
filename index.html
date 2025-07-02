@@ -464,11 +464,12 @@
         document.getElementById('whatsapp-chat').addEventListener('click', function (e) {
             e.preventDefault();
 
-            const phoneNumber = 'YOUR_PHONE_NUMBER'; // <-- Your WhatsApp number (no + or spaces)
+            // Use your full WhatsApp number with country code, no +, spaces, or dashes
+            const phoneNumber = '918590884831'; // Correct format for India
 
-            const message = 'Hi, I visited your website and would like to know more'; // <-- Your custom message
+            const message = 'Hi, I visited your website and would like to know more';
 
-            const url = `https://wa.me/${8590884831}?text=${encodeURIComponent(message)}`;
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
             window.open(url, '_blank');
         });
